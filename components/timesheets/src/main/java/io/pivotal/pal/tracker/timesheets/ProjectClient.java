@@ -14,6 +14,7 @@ public class ProjectClient {
     private final String endpoint;
 
     public ProjectClient(ProjectCache projectCache, RestOperations restOperations, String registrationServerEndpoint) {
+        this.projectCache = projectCache;
         this.restOperations = restOperations;
         this.endpoint = registrationServerEndpoint;
     }
