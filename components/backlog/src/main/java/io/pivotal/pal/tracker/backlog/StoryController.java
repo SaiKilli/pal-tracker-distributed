@@ -19,11 +19,9 @@ import static java.util.stream.Collectors.toList;
 public class StoryController {
     private final StoryDataGateway gateway;
     private final ProjectClient client;
-    private final ProjectCache projectCache;
 
     @Autowired
-    public StoryController(StoryDataGateway gateway, ProjectClient client, ProjectCache projectCache) {
-        this.projectCache = projectCache;
+    public StoryController(StoryDataGateway gateway, ProjectClient client) {
         this.gateway = gateway;
         this.client = client;
     }

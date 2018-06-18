@@ -23,7 +23,7 @@ public class StoryControllerTest {
 
     private StoryDataGateway storyDataGateway = mock(StoryDataGateway.class);
     private ProjectClient client = mock(ProjectClient.class);
-    private StoryController storyController = new StoryController(storyDataGateway, client);
+    private StoryController storyController = new StoryController( storyDataGateway, client);
 
     @Test
     public void testCreate() {
